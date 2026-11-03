@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KAI — Coastal Swim Club</title>
+    <meta
+      name="description"
+      content="KAI — 面向清晨海浪的海岸泳社。开放水域、潮汐课表、盐雾与日光。"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=Syne:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="logo" href="#top" aria-label="KAI home">KAI</a>
+      <nav class="nav" aria-label="主导航">
+        <a href="#sessions">课程</a>
+        <a href="#place">场地</a>
+        <a href="#join" class="nav-cta">加入</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-label="首页">
+        <div class="hero-media" aria-hidden="true">
+          <img
+            src="https://images.unsplash.com/photo-1505142468610-359e7d316be0?auto=format&fit=crop&w=2400&q=80"
+            alt=""
+            width="2400"
+            height="1600"
+          />
+          <div class="hero-wash"></div>
+        </div>
+        <div class="hero-copy">
+          <p class="brand">KAI</p>
+          <h1>在潮汐之间游泳</h1>
+          <p class="lede">清晨开放水域、盐雾与日光。为认真玩水的人准备。</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#join">预约试游</a>
+            <a class="btn btn-ghost" href="#sessions">查看课表</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="sessions" class="section sessions">
+        <div class="section-head">
+          <h2>本周潮汐课</h2>
+          <p>跟着水位走，不跟着闹钟走。</p>
+        </div>
+        <ul class="session-list">
+          <li>
+            <time datetime="2026-11-04T06:15">周二 06:15</time>
+            <strong>黎明破浪</strong>
+            <span>东岬 · 1.2 km · 中级</span>
+          </li>
+          <li>
+            <time datetime="2026-11-05T07:00">周三 07:00</time>
+            <strong>浮潜入门</strong>
+            <span>南湾 · 平静水域 · 初级</span>
+          </li>
+          <li>
+            <time datetime="2026-11-07T06:40">周五 06:40</time>
+            <strong>长距离潮汐</strong>
+            <span>西岸环线 · 3 km · 进阶</span>
+          </li>
+          <li>
+            <time datetime="2026-11-08T16:30">周六 16:30</time>
+            <strong>金色黄昏</strong>
+            <span>码头港 · 轻松 · 全级别</span>
+          </li>
+        </ul>
+      </section>
+
+      <section id="place" class="section place">
+        <div class="place-visual" aria-hidden="true">
+          <img
+            src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1800&q=80"
+            alt=""
+            width="1800"
+            height="1200"
+          />
+        </div>
+        <div class="place-copy">
+          <h2>基地在岸边</h2>
+          <p>
+            更衣室、热水淋浴、潮汐板与借阅式泳镜。出门就是浅滩，再往外是开放水域。
+          </p>
+          <p class="place-meta">海岸公路 28 号 · 每日 05:30–19:00</p>
+        </div>
+      </section>
+
+      <section id="join" class="section join">
+        <div class="section-head">
+          <h2>加入 KAI</h2>
+          <p>留下邮箱，我们发试游时段与装备清单。</p>
+        </div>
+        <form class="join-form" action="#" method="post">
+          <label class="sr-only" for="email">邮箱</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            autocomplete="email"
+            placeholder="你的邮箱"
+            required
+          />
+          <button type="submit" class="btn btn-primary">发送试游邀请</button>
+          <p class="form-note" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p class="footer-brand">KAI</p>
+      <p>Coastal Swim Club · 随意下水，认真回来。</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
